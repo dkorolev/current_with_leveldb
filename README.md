@@ -21,9 +21,10 @@ mkdir -p clean/with/subdirs
   ./.current/populate_leveldb --key foo --value bar &&
   ./.current/scan_leveldb
 )
-rm -rf clean/with/subdirs
-rm -r clean/with
-rm -r clean
+rm -rf clean/with/subdirs/current_with_leveldb
+rmdir clean/with/subdirs
+rmdir clean/with
+rmdir clean
 ```
 
 The Makefile is originally grabbed from:
