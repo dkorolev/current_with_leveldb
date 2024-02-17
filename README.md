@@ -32,4 +32,4 @@ wget https://raw.githubusercontent.com/C5T/Current/stable/cmake/Makefile
 
 For the time being, I've changed the repo & branch name for LevelDB support.
 
-**TODO(dkorolev):** This will be unnecessary once the respective PR into C5T/Current is merged.
+**TODO(dkorolev):** This will be unnecessary once [the respective PR into C5T/Current](https://github.com/C5T/Current/pull/965) is merged.

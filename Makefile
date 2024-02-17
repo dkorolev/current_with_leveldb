@@ -52,6 +52,7 @@ fmt:
 
 CMakeLists.txt:
 	# NOTE(dkorolev): This should be changed back to `C5T/Current/stable` once the PR is merged.
+	# The PR: https://github.com/C5T/Current/pull/965
 	@curl -s https://raw.githubusercontent.com/dkorolev/Current/leveldb_support/cmake/CMakeLists.txt >$@
 
 .gitignore:
