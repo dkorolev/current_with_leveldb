@@ -10,5 +10,8 @@ googletest/
 # The DB.
 testdb/
 
+# For the clean run from scratch.
+clean/
+
 # Will be grabbed by the `Makefile`.
 CMakeLists.txt

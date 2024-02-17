@@ -11,16 +11,17 @@ To run from scratch:
 
 ```
 mkdir -p clean/with/subdirs
-cd clean/with/subdirs
-git clone https://github.com/dkorolev/current_with_leveldb
-export CURRENT_WITH_LEVELDB=true
-make
-./.current/create_leveldb
-./.current/scan_leveldb
-./.current/populate_leveldb
-./.current/scan_leveldb
-./.current/populate_leveldb --key foo --value bar
-./.current/scan_leveldb
+(cd clean/with/subdirs; git clone https://github.com/dkorolev/current_with_leveldb) &&
+(cd clean/with/subdirs/current_with_leveldb; CURRENT_WITH_LEVELDB=true make) && (
+  cd clean/with/subdirs/current_with_leveldb &&
+  ./.current/create_leveldb &&
+  ./.current/scan_leveldb &&
+  ./.current/populate_leveldb &&
+  ./.current/scan_leveldb &&
+  ./.current/populate_leveldb --key foo --value bar &&
+  ./.current/scan_leveldb
+)
+rm -rf clean
 ```
 
 The Makefile is originally grabbed from:
