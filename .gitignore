@@ -1,0 +1,14 @@
+# Code, "submodules".
+current/
+leveldb/
+googletest/
+
+# Outputs.
+.current/
+.current_debug/
+
+# The DB.
+testdb/
+
+# Will be grabbed by the `Makefile`.
+CMakeLists.txt
