@@ -15,7 +15,7 @@ int main(int argc, char** argv) {
   leveldb::DB* db;
   leveldb::Options options;
 
-  leveldb::Status status = leveldb::DB::Open(options, "./testdb", &db);
+  leveldb::Status status = leveldb::DB::Open(options, FLAGS_db, &db);
 
   if (db) {
     std::cout << "DB opened." << std::endl;

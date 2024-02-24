@@ -14,7 +14,7 @@ int main(int argc, char** argv) {
   leveldb::Options options;
   options.create_if_missing = true;
 
-  leveldb::Status status = leveldb::DB::Open(options, "./testdb", &db);
+  leveldb::Status status = leveldb::DB::Open(options, FLAGS_db, &db);
 
   if (db) {
     std::cout << "DB opened/created." << std::endl;
